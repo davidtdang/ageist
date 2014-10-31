@@ -1,10 +1,13 @@
-age = rand(111)
+age = rand(111) # good catch!
 puts 'Age is ' + age.to_s
 
 if age <= 1
   puts 'baby'
+# what happens if the age is 1?
 elsif age > 1 && age <= 10
   puts 'child'
+# for the rest of these conditionals, do we need both parts
+# we should be ablet to do it without checking the lower bound
 elsif age > 10 && age <= 12
   puts 'tween'
 elsif age >= 13 && age <= 19
